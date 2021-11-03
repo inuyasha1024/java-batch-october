@@ -45,6 +45,7 @@ public class ThreadTopic6 {
             return "glz";
         });	//获取结果
         System.out.println("main method");
+        System.out.println("test");
         System.out.println(cf.join());
 
         List<Person> list = new ArrayList<>();
