@@ -36,16 +36,16 @@ class Person {
 public class ThreadTopic6 {
 
     public static void main(String[] args) {
-//        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {		//执行耗时任务
-//            try {
-//                Thread.sleep(2000);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//            return "glz";
-//        });	//获取结果
-//        System.out.println("main method");
-//        System.out.println(cf.join());
+        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> {		//执行耗时任务
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            return "glz";
+        });	//获取结果
+        System.out.println("main method");
+        System.out.println(cf.join());
 
         List<Person> list = new ArrayList<>();
         list.add(new Person("1", "j"));
